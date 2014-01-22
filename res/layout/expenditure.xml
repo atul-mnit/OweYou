@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Enter Details Of Expenditure"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/textView4"
+        android:text="Amount Consumed" />
+
+    <EditText
+        android:id="@+id/etAmntCnsumed"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/etAmntPaid"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bnext"
+        android:layout_marginBottom="46dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/etAmntCnsumed"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/bckb"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAmntPaid"
+        android:layout_alignLeft="@+id/etAmntPaid"
+        android:layout_marginBottom="28dp"
+        android:text="Amount Paid" />
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="(Let it be 0,0 if the Person is not involved in the transaction.)"
+        android:textSize="10sp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backk"
+    android:orientation="vertical" >
+    
+  <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
+      android:id="@+id/tablelayout1">
+        <TableRow >
+            <TextView android:text="Names" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Balance" />
+
+        </TableRow>
+      
+  </TableLayout>
+  <TextView android:text="get info from db" android:id="@+id/tvSQLinfo" android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:paddingLeft="7dp"/>
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:paddingLeft="7dp"
+      android:text="Enter Serial No. To Delete"
+      android:textSize="20sp" />
+  
+
+  <EditText
+      android:id="@+id/etDelete"
+      android:inputType="number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10" >
+
+      
+  </EditText>
+
+  <Button
+      android:id="@+id/bDel"
+      android:layout_width="80dp"
+      android:layout_height="40dp"
+      android:background="@drawable/bckb"
+      android:layout_marginLeft="7sp"
+      android:text="Delete" />
+
+</LinearLayout>

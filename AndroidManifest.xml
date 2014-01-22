@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oweyou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logohdpi"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.oweyou.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.oweyou.First"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FIRST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.oweyou.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DB"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Second"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Final"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".Expenditure"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".SQLView"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".Settle"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".Settled"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".Del"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+        <activity
+            android:name=".Info"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                        
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backkforsett"
+    android:orientation="vertical" >
+    
+  <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
+      android:id="@+id/tablelayout1">
+        <TableRow >
+            <TextView android:text="Names" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Balance" />
+
+        </TableRow>
+      
+  </TableLayout>
+  <TextView android:text="get info from db" android:id="@+id/tvSQLinfoSettleUp" android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:paddingLeft="6dp"/>
+
+  <Button
+      android:id="@+id/bSettle"
+      android:layout_width="100dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="70dp"
+      android:background="@drawable/bckb"
+      android:text="Settle Up" />
+
+</LinearLayout>
