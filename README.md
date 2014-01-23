@@ -13,6 +13,7 @@ of remembering all the transactions, etc.
 Team Details
 ---------------
 Team Name : Team.apk
+
 Team Members : 
    1. Atul Kumar Jha
    2. Shivam Gargsya
@@ -33,16 +34,22 @@ The Ultimate Money Management Application.
 Manage All Your Money without worrying about 
 Remembering your expenditures.
 
+
 •	Press “Add Expenditure” to add a new Expenditure.
-Enter Amount Consumed and Amount Paid; Leave it to
-0,0 if the individual is not involved in the transaction.
-•	Press “SettleUp” to settle the accounts. It will Lead you to 
-a page indicating who owes whom how much. Once the
-payment is settled, press “Payment Settled” to reset all the
-expenses to 0.
+   Enter Amount Consumed and Amount Paid; Leave it to
+   0,0 if the individual is not involved in the transaction.
+   
+•	Press “SettleUp” to settle the accounts. It will Lead you to
+   a page indicating who owes whom how much. Once the
+   payment is settled, press “Payment Settled” to reset all the
+   expenses to 0.
+   
 •	Press “Add Partner” to add a new friend to your group.
+
 •	Press “Reset Database” to start afresh.
+
 •	Press “Exit” to exit the application
+
 
 -----------------------------
 Notes
