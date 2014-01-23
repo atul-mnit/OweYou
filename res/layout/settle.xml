@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/backkforsett"
+    android:background="@drawable/backkforsettiggg"
     android:orientation="vertical" >
     
   <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
       android:id="@+id/tablelayout1">
         <TableRow >
             <TextView android:text="Names" android:layout_width="fill_parent"
+                android:paddingLeft="7dp"
                 android:layout_height="fill_parent" android:layout_weight="1"/>
 
             <TextView
@@ -22,7 +23,7 @@
   </TableLayout>
   <TextView android:text="get info from db" android:id="@+id/tvSQLinfoSettleUp" android:layout_width="fill_parent"
       android:layout_height="fill_parent"
-      android:paddingLeft="6dp"/>
+      android:paddingLeft="8dp"/>
 
   <Button
       android:id="@+id/bSettle"

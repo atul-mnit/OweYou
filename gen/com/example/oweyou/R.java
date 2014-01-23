@@ -25,7 +25,7 @@ public final class R {
         public static final int back=0x7f020001;
         public static final int backformain=0x7f020002;
         public static final int backk=0x7f020003;
-        public static final int backkforsett=0x7f020004;
+        public static final int backkforsettiggg=0x7f020004;
         public static final int badd=0x7f020005;
         public static final int bckb=0x7f020006;
         public static final int bcontinue=0x7f020007;

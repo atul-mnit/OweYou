@@ -80,7 +80,7 @@ public class Settled extends Activity implements View.OnClickListener{
 		    }else if((min*(-1)>max)){
 		    	amount[pMax]=0;
 		    	amount[pMin]=max+min;
-		    	String temp = "" + min*(-1);
+		    	String temp = "" + max;
 		    	from = settle.getname(pMin+1);
 		    	to = settle.getname(pMax+1);
 		    	info = info + from + " Owes " + "Rs. " + temp + " to " + to + "\n"; 
