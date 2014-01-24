@@ -76,8 +76,14 @@ public class Expenditure extends Activity implements View.OnClickListener{
 		case R.id.bnext:
 						
 				String p = amntpaid.getText().toString();
+				if(p.contentEquals("")){
+					p = "0";
+				}
 				long paid = Long.parseLong(p);
 				String c = amntcnsmed.getText().toString();
+				if(c.contentEquals("")){
+					c = "0";
+				}
 				long consumed = Long.parseLong(c);
 				//int b = (int) (y + (int) (paid - consumed)); This was here
 				int b = (int) (paid - consumed);

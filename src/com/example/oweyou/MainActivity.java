@@ -4,8 +4,11 @@ package com.example.oweyou;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -43,12 +46,33 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			//boolean diditwork = true;
 			//try{
 			String name = et.getText().toString();
-		    DB entry = new DB(this);
+			if(name.contentEquals("")){
+				/*Toast t = Toast.makeText(MainActivity.this, "No Name Entered!", 5000);  //Values is in MiliSeconds
+				t.setGravity(Gravity.CENTER,0,0);
+				t.show();*/
+				AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+				builder.setTitle("Alert!");
+		        builder.setMessage("No Name Entered!\nEnter a Name to Continue");
+		        builder.setCancelable(false);  //cant cancell the dilog by pressing back button
+		        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						// TODO Auto-generated method stub
+						arg0.cancel();
+					}
+				});
+		        AlertDialog alert = builder.create();
+			    alert.show();
+				
+			}else{
+			DB entry = new DB(this);
 		    entry.open();
 		    entry.createEntry(name, "0");
 		    entry.createTempEntry(name, "0");
 		    entry.close();
 		    startActivity(new Intent(MainActivity.this, Second.class));
+			}
 			/*}catch (Exception e){
 				diditwork = false;
 				String error = e.toString();

@@ -25,7 +25,7 @@ public final class R {
         public static final int back=0x7f020001;
         public static final int backformain=0x7f020002;
         public static final int backk=0x7f020003;
-        public static final int backkforsettiggg=0x7f020004;
+        public static final int backkforsettig=0x7f020004;
         public static final int badd=0x7f020005;
         public static final int bckb=0x7f020006;
         public static final int bcontinue=0x7f020007;
@@ -45,16 +45,16 @@ public final class R {
         public static final int user=0x7f020015;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001c;
+        public static final int action_settings=0x7f08001e;
         public static final int bAdd=0x7f080011;
         public static final int bAddPartners=0x7f08000e;
-        public static final int bDel=0x7f08001b;
+        public static final int bDel=0x7f08001d;
         public static final int bDeleteP=0x7f08000d;
         public static final int bGO=0x7f080003;
         public static final int bGo=0x7f080013;
         public static final int bNewExpend=0x7f08000b;
-        public static final int bPaymentSettled=0x7f080018;
-        public static final int bSettle=0x7f080016;
+        public static final int bPaymentSettled=0x7f08001a;
+        public static final int bSettle=0x7f080018;
         public static final int bSettleUp=0x7f08000c;
         public static final int bexit=0x7f08000f;
         public static final int binfo=0x7f080010;
@@ -62,17 +62,19 @@ public final class R {
         public static final int editText1=0x7f080002;
         public static final int etAmntCnsumed=0x7f080006;
         public static final int etAmntPaid=0x7f080007;
-        public static final int etDelete=0x7f08001a;
+        public static final int etDelete=0x7f08001c;
         public static final int etNameAdd=0x7f080012;
         public static final int imageView1=0x7f080005;
         public static final int tablelayout1=0x7f080014;
+        public static final int tablelayout2=0x7f080015;
         public static final int textView1=0x7f080000;
         public static final int textView2=0x7f080001;
         public static final int textView3=0x7f08000a;
         public static final int textView4=0x7f080004;
-        public static final int tvSQLinfo=0x7f080019;
-        public static final int tvSQLinfoSettleUp=0x7f080015;
-        public static final int tvSettlementDetails=0x7f080017;
+        public static final int tvBalance=0x7f080017;
+        public static final int tvNames=0x7f080016;
+        public static final int tvSQLinfo=0x7f08001b;
+        public static final int tvSettlementDetails=0x7f080019;
         public static final int tvusername=0x7f080009;
     }
     public static final class layout {

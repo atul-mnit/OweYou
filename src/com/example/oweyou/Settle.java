@@ -11,24 +11,31 @@ import android.widget.TextView;
 
 public class Settle extends Activity implements View.OnClickListener{
 	Button Set;
-	TextView tv;
+	TextView tvName,tvBalance;
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settle);
-		tv = (TextView) findViewById(R.id.tvSQLinfoSettleUp);
+		tvName = (TextView) findViewById(R.id.tvNames);
+		tvBalance = (TextView) findViewById(R.id.tvBalance);
 		Set = (Button) findViewById(R.id.bSettle);
 		Set.setOnClickListener(this);
 		DB info = new DB(this);
 		info.open();
-		String data = "";
+		String dataNames = "";
+		String dataBalance = "";
+		
 		int x = info.getCount();
 		for(int i=1;i<=x;i++){
-			data = data + i + " " + info.getname(i) + "                   " + info.getBalance(i) + "\n";
+						
+			dataNames = dataNames + i + " " + info.getname(i) + "\n";
+			dataBalance = dataBalance + info.getBalance(i) + "\n";
 		}
 		info.close();
-		tv.setText(data);
+		tvName.setText(dataNames);
+		tvBalance.setText(dataBalance);
+		
 	}
 	@Override
 	public void onClick(View v) {

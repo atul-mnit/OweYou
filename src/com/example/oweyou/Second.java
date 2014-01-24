@@ -3,7 +3,9 @@ package com.example.oweyou;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,26 +40,7 @@ public class Second extends Activity implements View.OnClickListener{
 				+ USER
 				+ "! \nAdd Your Partners";
 		tv.setText(message);
-		
-		/*Add.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Toast.makeText(Second.this, "Partner Added", Toast.LENGTH_SHORT).show();
-				et.setText("");
-				
-			}
-		});*/
-		
-		/*Go.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-			    startActivity(new Intent(Second.this, Final.class));	
-			}
-		});*/
+	
 		
 	}
 	@Override
@@ -69,6 +52,22 @@ public class Second extends Activity implements View.OnClickListener{
 			//boolean worked = true;
 			//try{
 			String partner = etPartner.getText().toString();
+			if(partner.contentEquals("")){
+				AlertDialog.Builder builder = new AlertDialog.Builder(Second.this);
+				builder.setTitle("Alert!");
+		        builder.setMessage("No Name Entered!\nEnter a Name to Add to Your Partner List");
+		        builder.setCancelable(false);  //cant cancell the dilog by pressing back button
+		        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						// TODO Auto-generated method stub
+						arg0.cancel();
+					}
+				});
+		        AlertDialog alert = builder.create();
+			    alert.show();
+			}else{
 			DB enter = new DB(this);
 			enter.open();
 			enter.createEntry(partner, "0");
@@ -76,6 +75,7 @@ public class Second extends Activity implements View.OnClickListener{
 			enter.close();
 			Toast.makeText(Second.this, "Partner Added", Toast.LENGTH_SHORT).show();
 			etPartner.setText("");
+			}
 			/*}catch (Exception e){
 				worked = false;
 				String error = e.toString();
